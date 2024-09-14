@@ -2,11 +2,11 @@
   "name": "coding-carpenter-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "start": "ts-node src/index.ts",
-    "start:dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "start": "ts-node src/app.ts",
+    "start:dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts",
     "test": "jest --watchAll"
   },
   "keywords": [],
@@ -23,9 +23,11 @@
   },
   "dependencies": {
     "@babel/preset-env": "^7.25.4",
+    "@flatten-js/core": "^1.6.1",
+    "@flatten-js/polygon-offset": "^1.1.4",
     "axios": "^1.7.7",
     "babel-jest": "^29.7.0",
-    "express": "^4.19.2",
+    "express": "^4.21.0",
     "ts-jest": "^29.2.5"
   }
 }
